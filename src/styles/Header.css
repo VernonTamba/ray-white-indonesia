@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--clr-white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.header__menuIconButton {
+  background-color: var(--clr-bg-dark-1) !important;
+}
+
+.header__menuIconButton:hover {
+  background-color: var(--clr-bg-dark-1) !important;
+}
+
+.header__menuIcon {
+  color: var(--clr-white);
+}
+
+.header__buttonLogout {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background-color: rgb(191, 45, 45) !important;
+}
+
+.header__buttonLogout:hover {
+  background-color: rgb(236, 25, 25) !important;
+}
+
+.header__title {
+  color: var(--clr-bg-dark-1);
+  font-weight: 700;
+}
+
+.header__title > span {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .header__buttonLogoutText {
+    display: none !important;
+  }
+
+  .header__title {
+    font-size: 0.9rem;
+  }
+
+  .header .MuiButton-root {
+    padding-inline: 0 !important;
+  }
+
+  .header__menuIcon {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.header__modalLogoutButton {
+  background-color: rgb(191, 45, 45) !important;
+}
+
+.header__modalLogoutButton:hover {
+  background-color: rgb(236, 25, 25) !important;
+}

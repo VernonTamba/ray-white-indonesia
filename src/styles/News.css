@@ -1,0 +1,81 @@
+.news {
+  background-color: var(--clr-white);
+  padding: 1em 2em;
+  margin: 1em 1.5em;
+}
+
+.news__headerTitle {
+  font-size: 1.2rem;
+  color: var(--clr-bg-dark-1);
+  margin-bottom: 2em;
+}
+
+.news__addImageButton {
+  margin-bottom: 4em !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.8rem !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.family {
+  margin-bottom: 1em;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.textField {
+  margin-bottom: 1em !important;
+}
+
+.news__coverImageLabel {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.news__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.MuiButton-root {
+  font-family: "Poppins", sans-serif !important;
+  text-transform: initial !important;
+}
+
+.news__button:nth-child(1),
+.news__button:nth-child(2) {
+  max-width: 300px !important;
+  font-size: 0.7rem !important;
+}
+
+.news__button:nth-child(1) {
+  border-color: var(--clr-grey) !important;
+  color: var(--clr-grey) !important;
+}
+
+.news__button:nth-child(1):hover {
+  border-color: var(--clr-grey) !important;
+  background-color: var(--clr-grey) !important;
+  color: var(--clr-white) !important;
+}
+
+.news__button:nth-child(2) {
+  background-color: #1cabe6 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .news__button:nth-child(1),
+  .news__button:nth-child(2) {
+    width: 100% !important;
+    max-width: 300px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .news__contents {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,52 @@
+.user {
+  text-align: right;
+}
+
+.user > .MuiButton-root {
+  font-family: "Poppins", sans-serif !important;
+  text-transform: initial !important;
+  background-color: var(--clr-bg-dark-1) !important;
+  margin-block: 2em !important;
+  font-weight: 400 !important;
+}
+
+.user > .MuiButton-root:hover {
+  font-weight: 600 !important;
+}
+
+.user {
+  padding-inline: 1.5em;
+}
+
+.user__mainContent {
+  background-color: var(--clr-white);
+  padding: 1em 2em;
+}
+
+.user__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1em;
+  margin-bottom: 2em;
+  background-color: var(--clr-bg-light);
+  padding: 0.5em 1em 1em 1em;
+  border-radius: 0.5rem;
+}
+
+.user__search > .MuiButton-root {
+  border-color: var(--clr-bg-dark-1);
+  color: var(--clr-bg-dark-1);
+}
+
+.user__search > .MuiButton-root:hover {
+  border-color: var(--clr-white);
+  color: var(--clr-white);
+  background-color: var(--clr-bg-dark-1);
+}
+
+@media screen and (max-width: 768px) {
+  .user__search .MuiButton-startIcon {
+    display: none !important;
+  }
+}

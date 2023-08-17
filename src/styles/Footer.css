@@ -1,0 +1,8 @@
+.footer {
+  background-color: var(--clr-white);
+  padding: 1em 2em;
+}
+
+.footer > p > span {
+  font-weight: 600;
+}

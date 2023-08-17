@@ -1,0 +1,61 @@
+.nav {
+  width: 50%;
+  max-width: 300px;
+  background-color: var(--clr-bg-dark-1);
+}
+
+.nav__profile {
+  padding: 2em;
+}
+
+.nav__profilePicture,
+.nav__username,
+.nav__role {
+  margin-bottom: 0.3em;
+}
+
+.nav__profilePicture {
+  height: 4em;
+  width: 4em;
+}
+
+.nav__username {
+  color: var(--clr-white);
+  font-size: 0.8rem;
+}
+
+.nav__role {
+  color: var(--clr-grey);
+  font-size: 0.8rem;
+}
+
+.nav__links {
+  margin-top: 1em;
+}
+
+.nav__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--clr-white);
+  padding: 1em 2em;
+  gap: 1em;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-weight: 200;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover {
+  border-left: 3.5px solid var(--clr-white);
+  background-color: var(--clr-bg-dark-2);
+}
+
+.nav__link.nav__link--active {
+  border-left: 3.5px solid var(--clr-white);
+  background-color: var(--clr-bg-dark-2);
+}

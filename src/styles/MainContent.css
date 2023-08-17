@@ -1,0 +1,6 @@
+.mainContent {
+  background-color: var(--clr-bg-light);
+  width: 100%;
+  /* TODO: How to make only the contents being scrolled and not including the header */
+  overflow: scroll;
+}

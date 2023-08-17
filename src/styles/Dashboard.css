@@ -1,0 +1,142 @@
+:root {
+  --clr-blue: #22a7d5;
+  --clr-red: #f46d6c;
+  --clr-orange: #fec107;
+}
+
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard__header,
+.dashboard__dataAnalyticsHeader {
+  padding: 1em 3em;
+}
+
+.dashboard__title {
+  color: var(--clr-bg-dark-1);
+}
+
+.dashboard__subtitle {
+  font-size: 0.9rem;
+  color: var(--clr-grey-dark);
+}
+
+.dashboard__contentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard__button {
+  background-color: var(--clr-bg-dark-1) !important;
+}
+
+.dashboard__dataAnalyticsContent {
+  background-color: var(--clr-white);
+  margin: 1em;
+  padding: 2em 1em;
+  border-radius: 1rem;
+}
+
+.dashboard__dataAnalyticsContent--topItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 0.3em; */
+  margin-bottom: 1em;
+  padding-left: 1em;
+  border-radius: 0.2rem;
+}
+
+.dashboard__dataAnalyticsContent--topItem.blue {
+  border-left: 4px solid var(--clr-blue);
+}
+
+.dashboard__dataAnalyticsContent--topItem.red {
+  border-left: 4px solid var(--clr-red);
+}
+
+.dashboard__dataAnalyticsContent--topItem.orange {
+  border-left: 4px solid var(--clr-orange);
+  height: 100%;
+}
+
+.dashboard__dataAnalyticsContent--topItem > .left > p {
+  font-size: 0.7rem;
+  color: var(--clr-grey);
+}
+
+/* TODO: Remove these icon classes if ever you used React chart library (FOR LINE CHARTS ONLY) */
+.icon.blue {
+  color: var(--clr-blue) !important;
+}
+
+.icon.red {
+  color: var(--clr-red) !important;
+}
+
+.icon.orange {
+  color: var(--clr-orange) !important;
+}
+
+.dashboard__dataAnalyticsContent--bottom > .left,
+.dashboard__dataAnalyticsContent--bottom > .right {
+  margin-block: 1em;
+}
+
+.dashboard__dataAnalyticsContent--bottom > .left > .top,
+.dashboard__dataAnalyticsContent--bottom > .right > .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.dashboard__dataAnalyticsContent--bottom > .left > .top > p:nth-child(2),
+.dashboard__dataAnalyticsContent--bottom > .right > .top > p:nth-child(2) {
+  font-size: 0.8rem;
+}
+
+.dashboard__dataAnalyticsContent--bottom > .left > .top > p:nth-child(3),
+.dashboard__dataAnalyticsContent--bottom > .right > .top > p:nth-child(3) {
+  flex: 2;
+  text-align: right;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard .MuiButton-endIcon {
+    display: none !important;
+  }
+
+  .dashboard__header,
+  .dashboard__dataAnalyticsHeader {
+    padding: 1em 2em;
+  }
+
+  .dashboard__contentContainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard__dataAnalyticsContent--top {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .dashboard__dataAnalyticsContent--topItem {
+    gap: 2em;
+  }
+
+  .dashboard__dataAnalyticsContent--bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3em;
+  }
+}
